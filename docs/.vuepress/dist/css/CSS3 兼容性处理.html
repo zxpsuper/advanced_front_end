@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>前端进阶小书 | CSS3 兼容性处理</title>
+    <meta name="description" content="小皮咖前端经验整理而写成的一本书">
+    
+    
+    <link rel="preload" href="/assets/css/7.styles.eb858c05.css" as="style"><link rel="preload" href="/assets/js/app.f02644d2.js" as="script"><link rel="preload" href="/assets/js/3.7fc6a68e.js" as="script"><link rel="prefetch" href="/assets/js/4.29c3ac6e.js"><link rel="prefetch" href="/assets/js/1.667a059f.js"><link rel="prefetch" href="/assets/js/2.c9f793f5.js"><link rel="prefetch" href="/assets/js/0.6a562171.js"><link rel="prefetch" href="/assets/js/5.072fc142.js"><link rel="prefetch" href="/assets/js/6.c74369c9.js">
+    <link rel="stylesheet" href="/assets/css/7.styles.eb858c05.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div><a href="/" class="home-link router-link-active"><!----><span class="site-name">
+      前端进阶小书
+    </span></a><div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""><!----></div><nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">Home</a></div><div class="nav-item"><a href="https://github.com/zxpsuper/advanced_front_end" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><!----></nav></div></header><div class="sidebar-mask"></div><div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">Home</a></div><div class="nav-item"><a href="https://github.com/zxpsuper/advanced_front_end" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><!----></nav><ul class="sidebar-links"><li><div class="sidebar-group first"><p class="sidebar-heading open"><span>CSS 大全</span><!----></p><ul class="sidebar-group-items"><li><a href="/css/cssTips.html" class="sidebar-link">CSS 几个小技巧</a></li></ul></div></li></ul></div><div class="page"><div class="content"><h2 id="css3-兼容性处理"><a href="#css3-兼容性处理" aria-hidden="true" class="header-anchor">#</a><strong>CSS3 兼容性处理</strong></h2><h3 id="当然，目前前端工程化，已经不需要人为的去写这些兼容不同浏览器的属性，一切可以交给打包工具，如webpack-postcss。但是作为一名前端人员，了解一下这些还是很有必要的。"><a href="#当然，目前前端工程化，已经不需要人为的去写这些兼容不同浏览器的属性，一切可以交给打包工具，如webpack-postcss。但是作为一名前端人员，了解一下这些还是很有必要的。" aria-hidden="true" class="header-anchor">#</a><strong>当然，目前前端工程化，已经不需要人为的去写这些兼容不同浏览器的属性，一切可以交给打包工具，如webpack + postcss。但是作为一名前端人员，了解一下这些还是很有必要的。</strong></h3><h3 id="transform"><a href="#transform" aria-hidden="true" class="header-anchor">#</a><strong>Transform</strong></h3><div class="language- line-numbers-mode"><pre class="language-text"><code>transform:rotate(7deg);
+-ms-transform:rotate(7deg);   /* IE 9 */
+-moz-transform:rotate(7deg);  /* Firefox */
+-webkit-transform:rotate(7deg); /* Safari 和 Chrome */
+-o-transform:rotate(7deg);  /* Opera */
+</code></pre><div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>键值有：</p><pre><code>translate(x,y) translate3d(x,y,z) translateX(x)
+
+translateY(y)scale(x,y) scale3d(x,y,z) scaleX(x) 
+
+scaleY(y) scaleZ(z) rotate(angle)  rotate3d(x,y,z,angle)    rotateX(angle) ….
+</code></pre><h3 id="border-radius"><a href="#border-radius" aria-hidden="true" class="header-anchor">#</a><strong>Border-radius</strong></h3><pre><code>Border-radius:10px;
+</code></pre><p>低版本的chrome:-webkit-border-radius:10px;</p><p>低版本的firefox:-moz-border-radius:10px;</p><pre><code>border-top-left-radius:5px;      //左上角，注意顺序是先上下后左右
+border-top-right-radius:10px;    //左上角
+border-bottom-left-radius:15px;  //左下角
+border-bottom-left-radius:20px;  //右上角
+</code></pre><h3 id="transition"><a href="#transition" aria-hidden="true" class="header-anchor">#</a><strong>transition</strong></h3><div class="language- line-numbers-mode"><pre class="language-text"><code>div{
+  width:100px;
+  transition: width 2s;
+  -moz-transition: width 2s; /* Firefox 4 */
+  -webkit-transition: width 2s; /* Safari 和 Chrome */
+  -o-transition: width 2s; /* Opera */
+}
+</code></pre><div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p>有一个:hover伪类
+<code>div:hover { height : 300px; }</code>
+transition: 变化css属性   过渡时间   速度曲线   推迟时间
+默认为：transition: all 0 ease 0</p><h3 id="animation"><a href="#animation" aria-hidden="true" class="header-anchor">#</a><strong>Animation</strong></h3><div class="language- line-numbers-mode"><pre class="language-text"><code>div{
+  animation : mymove 5s infinite;
+  -webkit-animation : mymove 5s infinite; /* Safari 和 Chrome */
+}
+</code></pre><div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>Animation: 动画名  动画时间  速度曲线  推迟时间  播放次数 是否轮流反向
+默认为： animation: none  0  ease  0  1  normal
+定义动画——</p><div class="language- line-numbers-mode"><pre class="language-text"><code>@keyframes myfirst{
+  from {background: red;}
+  to {background: yellow;}
+}
+
+@-moz-keyframes myfirst /* Firefox */
+{
+  from {background: red;}
+  to {background: yellow;}
+}
+
+@-webkit-keyframes myfirst /* Safari 和 Chrome */
+{
+  from {background: red;}
+  to {background: yellow;}
+}
+
+@-o-keyframes myfirst /* Opera */
+{
+  from {background: red;}
+  to {background: yellow;}
+}
+</code></pre><div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br></div></div><p>多次改变——</p><div class="language- line-numbers-mode"><pre class="language-text"><code>@keyframes myfirst {
+  0%    {background: red;}
+  25%   {background: yellow;}
+  50%   {background: blue;}
+  100%  {background: green;}
+}
+</code></pre><div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div></div><div class="content edit-link"><!----><!----></div><!----></div></div></div>
+    <script src="/assets/js/3.7fc6a68e.js" defer></script><script src="/assets/js/app.f02644d2.js" defer></script>
+  </body>
+</html>
