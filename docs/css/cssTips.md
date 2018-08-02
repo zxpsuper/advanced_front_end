@@ -1,7 +1,7 @@
 ---
 title: CSS 几个小技巧
-lang: en-US
 ---
+### CSS 几个小技巧
 1. 设置placeholder样式的方法
 
 ```

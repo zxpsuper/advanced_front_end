@@ -6,7 +6,6 @@ module.exports = {
     lineNumbers: true,
     anchor: { permalink: true, permalinkBefore: true, permalinkSymbol: '#' }
   },
-  displayAllHeaders: true,
   themeConfig: {
     nav: [
       { text: 'Home', link: '/' },
@@ -17,7 +16,8 @@ module.exports = {
         title: 'CSS 大全',
         collapsable: false,
         children: [
-          '/css/cssTips'
+          '/css/cssTips',
+          '/css/flex'
         ]
       },
     ]
