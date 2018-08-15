@@ -8,7 +8,7 @@ title: Flex布局介绍
 Flex 是 Flexible Box 的缩写，意为"弹性布局"，用来为盒状模型提供最大的灵活性
 
 任何一个容器都可以指定为 Flex 布局。
-```
+```css
 .box{
   display: -webkit-flex; /* Safari */   //考虑兼容
   display: flex;
@@ -16,7 +16,7 @@ Flex 是 Flexible Box 的缩写，意为"弹性布局"，用来为盒状模型�
 ```
 
 行内元素也可以使用 Flex 布局。
-```
+```css
 .box{
   display: inline-flex;
 }
@@ -27,7 +27,7 @@ Flex 是 Flexible Box 的缩写，意为"弹性布局"，用来为盒状模型�
 
 
 **1.flex-direction属性决定主轴的方向（即项目的排列方向）。**
-```
+```css
 .box {
   flex-direction: row | row-reverse | column | column-reverse;
                   →         ←          ↓            ↑
@@ -35,7 +35,7 @@ Flex 是 Flexible Box 的缩写，意为"弹性布局"，用来为盒状模型�
 ```
 **2 flex-wrap属性**
 默认情况下，项目都排在一条线上。flex-wrap属性定义，如果一条轴线排不下，如何换行。
-```
+```css
 .box{
   flex-wrap: nowrap | wrap | wrap-reverse;
       不换行     换行       向上换行
@@ -46,7 +46,7 @@ flex-flow属性是flex-direction属性和flex-wrap属性的简写形式，默认
 
 **4 justify-content属性**(常用属性)
 justify-content属性定义了项目在x轴上的对齐方式。
-```
+```css
 .box {
   justify-content: flex-start | flex-end | center | space-between | space-around;
                    →             ←         居中       中间留空        头尾中间都留空
@@ -54,7 +54,7 @@ justify-content属性定义了项目在x轴上的对齐方式。
 ```
 **5 align-items属性（y轴）**(常用属性)
 align-items属性定义项目在交叉轴上如何对齐。
-```
+```css
 .box {
   align-items: flex-start | flex-end | center | baseline | stretch 
                 顶对齐       底对齐      中部对齐   首行对齐    充满
@@ -62,7 +62,7 @@ align-items属性定义项目在交叉轴上如何对齐。
 ```                   
 **6 align-content属性（y轴）**
 align-content属性定义了多根轴线的对齐方式。如果项目只有一根轴线，该属性不起作用。
-```
+```css
 .box {
   align-content: flex-start | flex-end | center | space-between | space-around | stretch;
                （请对照 align-items属性）
@@ -91,7 +91,7 @@ flex属性是flex-grow, flex-shrink 和 flex-basis的简写，默认值为0 1 au
 
 **6 align-self属性（y轴）**(常用属性)## 标题 ##
 align-self属性允许单个项目有与其他项目不一样的对齐方式，可覆盖align-items属性。默认值为auto，表示继承父元素的align-items属性，如果没有父元素，则等同于stretch。
-```
+```css
 .item {
   align-self: auto | flex-start | flex-end | center | baseline | stretch;
   （请对照 align-items属性）
