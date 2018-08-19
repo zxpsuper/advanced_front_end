@@ -2,7 +2,7 @@
 home: true
 heroImage: https://vuepress.vuejs.org/hero.png
 actionText: 快速上手 →
-actionLink: /guide/
+actionLink: /css/cssTips
 features:
 - title: 前端开发
   details: 以 前端开发 内容为主体的前端进阶文章。

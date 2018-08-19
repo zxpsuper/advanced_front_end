@@ -28,6 +28,13 @@ module.exports = {
           '/suanfa/binarySearch',
         ]
       },
+      {
+        title: '浏览器相关',
+        collapsable: false,
+        children: [
+          '/browser/https',
+        ]
+      },
     ]
   }
 }
