@@ -4,11 +4,11 @@ heroImage: https://vuepress.vuejs.org/hero.png
 actionText: 快速上手 →
 actionLink: /guide/
 features:
-- title: 简洁至上
-  details: 以 Markdown 为中心的项目结构，以最少的配置帮助你专注于写作。
-- title: Vue驱动
-  details: 享受 Vue + webpack 的开发体验，在 Markdown 中使用 Vue 组件，同时可以使用 Vue 来开发自定义主题。
-- title: 高性能
-  details: VuePress 为每个页面预渲染生成静态的 HTML，同时在页面被加载的时候，将作为 SPA 运行。
+- title: 前端开发
+  details: 以 前端开发 内容为主体的前端进阶文章。
+- title: 涵盖内容
+  details: CSS Javascript Vue 浏览器知识 算法等。
+- title: 不定时更新
+  details: 本文库将不定时更新文章，欢迎收藏或 star。
 footer: MIT Licensed | Copyright © 2018-present Evan You
 ---
