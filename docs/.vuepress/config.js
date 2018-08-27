@@ -35,6 +35,13 @@ module.exports = {
           '/browser/https',
         ]
       },
+      {
+        title: 'Vue',
+        collapsable: false,
+        children: [
+          '/vue/router',
+        ]
+      },
     ]
   }
 }

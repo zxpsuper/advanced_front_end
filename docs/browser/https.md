@@ -24,7 +24,7 @@ Bill 回电： 拉倒你吧你， 我们米国的政体有着强大的纠错性�
 
 Bill  提议： “要不我们做个数据的加密？ 每次传输之前， 你把消息用一个加密算法加密， 然后发到我这里以后我再解密， 这样别人就无法偷窥了，像这样： ”
 
-![https](http://mmbiz.qpic.cn/mmbiz_png/KyXfCrME6UJFk4ma5Y5g5wIeggZaCZ3xEtI3NKKgVfhvEbTHU2XMhepPaIdvRKsLmGzUb1Sk1BrCyhbGGS4XFQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1)
+![https](https://ph-image-test.oss-ap-southeast-1.aliyuncs.com/Su6aV1r.22V.jpg)
 
 张大胖冰雪聪明，一看就明白了， 这加密和解密算法是公开的，那个密钥是保密的， 只有两人才知道， 这样生成的加密消息（密文） 别人就无法得知了。 他说： “Bill 老兄，你生成一个密钥， 然后把密钥发给我， 咱们这就开启加密消息， 让那些偷窥狂人们哭去吧！”（这叫对称加密算法， 因为加密和解密用的是同一个密钥）
 
@@ -65,11 +65,11 @@ Bill 和 张大胖的通信无法加密，说话谨慎了不少， 直到有一�
 
 更有意思的是，用私钥加密的数据，只有对应的公钥才能解密，用公钥加密的数据， 只有对应的私钥才能解密。
 
-![](http://mmbiz.qpic.cn/mmbiz_png/KyXfCrME6UJFk4ma5Y5g5wIeggZaCZ3xVesHvBMLguuoJuPmFZs3AJW0z2DFPdXibo3GYiab9D8s8JwmolDAIt0g/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1)
+![](https://ph-image-test.oss-ap-southeast-1.aliyuncs.com/wN7aV1r.22V.png)
 
 有了这两个漂亮的特性， 当张大胖给Bill发消息的时候， 就可以先用Bill的公钥去加密（反正Bill的公钥是公开的，地球人都知道）， 等到消息被Bill 收到后， 他就可以用自己的私钥去解密（只有Bill才能解开，私钥是保密的 ）
 
-![](http://mmbiz.qpic.cn/mmbiz_png/KyXfCrME6UJFk4ma5Y5g5wIeggZaCZ3xl7E009LNibq0X9Qwt7rapNbUSxFZ2KuRSD0lNvu7zAv8fmADaia2r0aA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1)
+![](https://ph-image-test.oss-ap-southeast-1.aliyuncs.com/wK9aV1r.22V.jpg)
 
 反过来也是如此， 当Bill 想给张大胖发消息的时候，就用张大胖的公钥加密， 张大胖收到后，就用自己的私钥解密。
 
@@ -115,7 +115,7 @@ Bill 说： “你小子可以啊， 这样以来既解决了密钥的传递问�
 
 张大胖背后出汗了，是啊，这个中间人解密以后，还可以用Bill的公钥加密，发给Bill ,  Bill和我根本都意识不到， 还以为我们在安全传输呢！
 
-![](http://mmbiz.qpic.cn/mmbiz_png/KyXfCrME6UJFk4ma5Y5g5wIeggZaCZ3x2XHzfjYrw1jXdzzVFbKTz1PVKXOC4UiaI1P5PVqpRfrYCng25yyLJYA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1)
+![](https://ph-image-test.oss-ap-southeast-1.aliyuncs.com/H9baV1r.22V.jpg)
 
 看来问题出现在公钥的分发上！  虽然这个东西是公开的， 但是在别有用心的人看来，截取以后还可以干坏事 ！
 
@@ -158,7 +158,7 @@ Bill 说： “你小子可以啊， 这样以来既解决了密钥的传递问�
 
 简单来讲是这样的， Bill可以把他的公钥和个人信息用一个Hash算法生成一个消息摘要， 这个Hash算法有个极好的特性，只要输入数据有一点点变化，那生成的消息摘要就会有巨变，这样就可以防止别人修改原始内容。
 
-![](http://mmbiz.qpic.cn/mmbiz_png/KyXfCrME6UJFk4ma5Y5g5wIeggZaCZ3xz65YB4HHCtgIRdk20CwxjreqriatpLWV8wDWIwzRaqVm32zmCibSiacOQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1)
+![](https://ph-image-test.oss-ap-southeast-1.aliyuncs.com/CYcaV1r.22V.png)
 
 可是作为攻击者的中间人笑了： “虽然我没办法改公钥，但是我可以把整个原始信息都替换了， 生成一个新的消息摘要， 你不还是辨别不出来？”
 
@@ -166,11 +166,11 @@ Bill 说： “你小子可以啊， 这样以来既解决了密钥的传递问�
 
 张大胖说你别得意的太早 ， 我们会让有公信力的认证中心（简称CA）用它的私钥对消息摘要加密，形成签名：
 
-![](http://mmbiz.qpic.cn/mmbiz_png/KyXfCrME6UJFk4ma5Y5g5wIeggZaCZ3xcHCS1Za6RllQr302IB7kibtADRFiaRFXj66eUPHhOicZsoJdicJibmU1Hfw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1)
+![](https://ph-image-test.oss-ap-southeast-1.aliyuncs.com/opeaV1r.22V.png)
 
 这还不算， 还把原始信息和数据签名合并， 形成一个全新的东西，叫做“数字证书”
 
-![](http://mmbiz.qpic.cn/mmbiz_png/KyXfCrME6UJFk4ma5Y5g5wIeggZaCZ3xviaVAYDBOyh06flLQcibdyVHiawCDRyjBOZ8kA40kMoQk4WPydvq0U9hA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1)
+![](https://ph-image-test.oss-ap-southeast-1.aliyuncs.com/f5MaV1r.22V.png)
 
 张大胖接着说：当Bill把他的证书发给我的时候， 我就用同样的Hash 算法， 再次生成消息摘要，然后用CA的公钥对数字签名解密， 得到CA创建的消息摘要， 两者一比，就知道有没有人篡改了！
 
@@ -182,7 +182,7 @@ Bill 说： “你小子可以啊， 这样以来既解决了密钥的传递问�
 
 虽然很费劲， 但是为了防范你们这些偷窥者，实在是没办法啊。
 
-![](http://mmbiz.qpic.cn/mmbiz_png/KyXfCrME6UJFk4ma5Y5g5wIeggZaCZ3x1n4IwPsiaF62PuK3aASF76C3ortagdYyFs8gUic6aJr9ibwyj2quFCMjQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1)
+![](https://ph-image-test.oss-ap-southeast-1.aliyuncs.com/2qNaV1r.22V.png)
 
 中间人恶狠狠地说： “算你小子狠！ 等着吧，我还有别的招。 对了，我且问你， 你这个CA的公钥怎么拿到？　难道不怕我在你传输ＣＡ公钥的时候发起中间人攻击吗？　如果我成功的伪装成了ＣＡ，你这一套体系彻底玩完。”
 
@@ -205,6 +205,6 @@ Bill 说： “你小子可以啊， 这样以来既解决了密钥的传递问�
 
 一个简化的（例如下图没有包含Pre-Master Secret）https流程图是这样的， 如果你理解了前面的原理，这张图就变得非常简单：
 
-![](http://mmbiz.qpic.cn/mmbiz_png/KyXfCrME6UJFk4ma5Y5g5wIeggZaCZ3xKYfzxv54kPQ9q9SKRPHpnVib9MF6MfPcLJgej3wicCVZSicUMNzoVasiaA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1)
+![](https://ph-image-test.oss-ap-southeast-1.aliyuncs.com/mKPaV1r.22V.jpg)
 
 （完）
