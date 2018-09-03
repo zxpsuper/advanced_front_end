@@ -33,6 +33,8 @@ module.exports = {
         collapsable: false,
         children: [
           '/browser/https',
+          '/browser/static',
+          '/browser/cache',
         ]
       },
       {
