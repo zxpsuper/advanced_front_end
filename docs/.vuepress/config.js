@@ -35,13 +35,22 @@ module.exports = {
           '/browser/https',
           '/browser/static',
           '/browser/cache',
+          '/browser/cors',
         ]
       },
       {
         title: 'Vue',
         collapsable: false,
         children: [
+          '/vue/vue',
           '/vue/router',
+        ]
+      },
+      {
+        title: 'Javascript',
+        collapsable: false,
+        children: [
+          '/js/amd_commonjs',
         ]
       },
     ]

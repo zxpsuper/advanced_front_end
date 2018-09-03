@@ -16,7 +16,10 @@
 * [浏览器静态资源缓存与更新](./docs/browser/static.md)
 * [浏览器的协商缓存与强缓存](./docs/browser/cache.md)
 
-4.Vue
+4. Vue
+* [Vue双向数据绑定原理](./docs/vue/vue.md)
 * [Vue-router 原理](./docs/vue/router.md)
 
+5. Javascript
+* [Vue双向数据绑定原理](./docs/js/amd_commonjs.md)
 
