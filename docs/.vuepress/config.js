@@ -44,6 +44,7 @@ module.exports = {
         children: [
           '/vue/vue',
           '/vue/router',
+          '/vue/vueplugin',
         ]
       },
       {
@@ -51,6 +52,7 @@ module.exports = {
         collapsable: false,
         children: [
           '/js/amd_commonjs',
+          '/js/seajs',
         ]
       },
     ]

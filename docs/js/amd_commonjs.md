@@ -1,6 +1,6 @@
-### Javascript 模块化
+# Javascript 模块化
 
-#### **1. CommonJS**
+## **1. CommonJS**
 CommonJS 最开始是 Mozilla 的工程师于 2009 年开始的一个项目，它的目的是让浏览器之外的 JavaScript （比如服务器端或者桌面端）能够通过模块化的方式来开发和协作。
 
 在 CommonJS 的规范中，每个 JavaScript 文件就是一个独立的模块上下文（module context），在这个上下文中默认创建的属性都是私有的。也就是说，在一个文件定义的变量（还包括函数和类），都是私有的，对其他文件是不可见的。
@@ -39,7 +39,7 @@ myModuleInstance.goodbye(); // 'goodbye!'
 ```
 需要注意的是，CommonJS 规范的主要适用场景是服务器端编程，所以采用**同步**加载模块的策略。如果我们依赖3个模块，代码会一个一个依次加载它们。
 
-#### **2. AMD**
+## **2. AMD**
 介绍了同步方案，我们当然也有异步方案。在浏览器端，我们更常用 AMD 来实现模块化开发。AMD 是 Asynchronous Module Definition 的简称，即“异步模块定义”。
 
 我们看一下 AMD 模块的使用方式：
@@ -70,7 +70,7 @@ define([], function() {
   };
 });
 ```
-#### **3. UMD**
+## **3. UMD**
 对于需要同时支持 AMD 和 CommonJS 的模块而言，可以使用 UMD（Universal Module Definition）。
 ```js
 (function (root, factory) {
@@ -101,7 +101,7 @@ define([], function() {
 
 如果你写了一个小工具库，你想让它及支持AMD规范，又想让他支持CommonJS规范，那么采用UMD规范对你的代码进行包装吧。
 
-#### **4. ES6 模块**
+## **4. ES6 模块**
 可能你已经注意到了，上面所有这些模型定义，没有一种是 JavaScript 语言原生支持的。无论是 AMD 还是 CommonJS，这些都是 JavaScript 函数来模拟的。
 
 幸运的是，ES6 开始引入了原生的模块功能。

@@ -1,4 +1,4 @@
-### UMD规范的IIFE模板
+# UMD规范的IIFE模板
 
 UMD规范同时兼容了浏览器、Node环境及AMD规范，这样我们的代码使用UMD包装后就可以在不同的环境中运行了。
 ```javascript

@@ -1,7 +1,5 @@
----
-title: CSS 几个小技巧
----
-### CSS 几个小技巧
+
+# CSS 几个小技巧
 1. 设置placeholder样式的方法
 
 ```css
