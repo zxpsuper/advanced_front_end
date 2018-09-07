@@ -46,7 +46,7 @@ module.exports = {
           '/vue/vue',
           '/vue/router',
           '/vue/vueplugin',
-          '/vue/vuedate',
+          '/vue/vuedate'
         ]
       },
       {

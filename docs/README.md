@@ -5,7 +5,7 @@ actionText: 快速上手 →
 actionLink: /css/cssTips
 features:
 - title: 前端开发
-  details: 以 前端开发 内容为主体的前端进阶文章。
+  details: 以 “前端开发” 内容为主体的前端进阶文章，部分原创，部分转载。
 - title: 涵盖内容
   details: CSS Javascript Vue 浏览器知识 算法等。
 - title: 不定时更新
