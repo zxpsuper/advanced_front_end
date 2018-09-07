@@ -15,11 +15,16 @@
 * [一个故事讲完https](./docs/browser/https.md)
 * [浏览器静态资源缓存与更新](./docs/browser/static.md)
 * [浏览器的协商缓存与强缓存](./docs/browser/cache.md)
+* [跨域资源共享 CORS 详解](./docs/browser/cors.md)
+* [浏览器 Event Loop 机制](./docs/browser/eventloop.md)
 
 4. Vue
 * [Vue双向数据绑定原理](./docs/vue/vue.md)
 * [Vue-router 原理](./docs/vue/router.md)
+* [Vue 编写一个长按指令插件](./docs/vue/vueplugin.md)
+* [Vue 手写一个时间选择器](./docs/vue/vuedate.md)
 
 5. Javascript
 * [Vue双向数据绑定原理](./docs/js/amd_commonjs.md)
+* [sea.js](./docs/js/seajs.md)
 
