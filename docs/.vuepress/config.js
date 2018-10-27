@@ -37,6 +37,9 @@ module.exports = {
           '/browser/cache',
           '/browser/cors',
           '/browser/eventloop',
+          '/browser/urlrender',
+          '/browser/garbage',
+          '/browser/garbagerefuse',
         ]
       },
       {
@@ -46,13 +49,15 @@ module.exports = {
           '/vue/vue',
           '/vue/router',
           '/vue/vueplugin',
-          '/vue/vuedate'
+          '/vue/vuedate',
+          '/vue/computedvswatch'
         ]
       },
       {
         title: 'Javascript',
         collapsable: false,
         children: [
+          '/js/use_strict',
           '/js/amd_commonjs',
           '/js/seajs',
         ]

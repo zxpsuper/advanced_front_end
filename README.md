@@ -25,6 +25,6 @@
 * [Vue 手写一个时间选择器](./docs/vue/vuedate.md)
 
 5. Javascript
-* [Vue双向数据绑定原理](./docs/js/amd_commonjs.md)
+* [Javascript 模块化](./docs/js/amd_commonjs.md)
 * [sea.js](./docs/js/seajs.md)
 
