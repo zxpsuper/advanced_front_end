@@ -1,7 +1,7 @@
 ---
 home: true
-heroImage: https://vuepress.vuejs.org/hero.png
-actionText: 快速上手 →
+heroImage: https://zxpsuper.github.io/img/avatar.jpg
+actionText: Let us go!!
 actionLink: /css/cssTips
 features:
 - title: 前端开发

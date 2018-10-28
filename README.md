@@ -17,14 +17,19 @@
 * [浏览器的协商缓存与强缓存](./docs/browser/cache.md)
 * [跨域资源共享 CORS 详解](./docs/browser/cors.md)
 * [浏览器 Event Loop 机制](./docs/browser/eventloop.md)
+* [输入URL至页面渲染](./docs/browser/urlrender.md)
+* [浏览器内存回收机制](./docs/browser/garbage.md)
+* [内存泄漏与避免](./docs/browser/garbagerefuse.md)
 
 4. Vue
 * [Vue双向数据绑定原理](./docs/vue/vue.md)
 * [Vue-router 原理](./docs/vue/router.md)
 * [Vue 编写一个长按指令插件](./docs/vue/vueplugin.md)
 * [Vue 手写一个时间选择器](./docs/vue/vuedate.md)
+* [Vue 中的 computed 与 watch 对比](./docs/vue/computedvswatch.md)
 
 5. Javascript
+* [Use Strict](./docs/js/use_strict.md)
 * [Javascript 模块化](./docs/js/amd_commonjs.md)
 * [sea.js](./docs/js/seajs.md)
 
