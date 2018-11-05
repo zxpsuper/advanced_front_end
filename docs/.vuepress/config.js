@@ -61,6 +61,7 @@ module.exports = {
           '/js/use_strict',
           '/js/amd_commonjs',
           '/js/seajs',
+          '/js/design',
         ]
       },
     ]

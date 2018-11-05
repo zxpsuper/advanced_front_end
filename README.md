@@ -10,6 +10,7 @@
 
 2. 算法系列
 * [算法复杂度](./docs/suanfa/binarySearch.md)
+* [排序算法](./docs/suanfa/sort.md)
 
 3. 浏览器相关
 * [一个故事讲完https](./docs/browser/https.md)
@@ -32,4 +33,4 @@
 * [Use Strict](./docs/js/use_strict.md)
 * [Javascript 模块化](./docs/js/amd_commonjs.md)
 * [sea.js](./docs/js/seajs.md)
-
+* [设计模式](./docs/js/design.md)
