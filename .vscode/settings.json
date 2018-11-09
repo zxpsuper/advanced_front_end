@@ -1,0 +1,8 @@
+{
+    "editor.formatOnSave": false,
+    "[javascript]": {
+        "editor.formatOnSave": true
+    },
+    "fileheader.Author": "super",
+    "fileheader.LastModifiedBy": "super"
+}
