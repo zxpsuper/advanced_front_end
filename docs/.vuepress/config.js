@@ -66,7 +66,13 @@ module.exports = {
                     "/js/amd_commonjs",
                     "/js/seajs",
                     "/js/design",
+                    "/js/regular_expression",
                 ],
+            },
+            {
+                title: "一些插件",
+                collapsable: false,
+                children: ["/plugin/carousal"],
             },
         ],
     },

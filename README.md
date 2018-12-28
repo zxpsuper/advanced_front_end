@@ -35,5 +35,10 @@
 * [Javascript 模块化](./docs/js/amd_commonjs.md)
 * [sea.js](./docs/js/seajs.md)
 * [设计模式](./docs/js/design.md)
+* [正则表达式](./docs/js/regular_expression.md)
+
+6. 一些插件
+
+* [一款轮播组件的诞生](./docs/plugin/carousal.md)
 
 ![](https://camo.githubusercontent.com/dc24ae2780ba50578e4138b6e9e24a7a41ddd8f5/68747470733a2f2f757365722d676f6c642d63646e2e786974752e696f2f323031382f392f392f313635626437313733396531653837383f773d32383126683d32373126663d706e6726733d3239383336)
