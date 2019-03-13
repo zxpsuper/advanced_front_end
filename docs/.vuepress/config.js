@@ -74,6 +74,11 @@ module.exports = {
                 collapsable: false,
                 children: ["/plugin/carousal"],
             },
+            {
+                title: "其他",
+                collapsable: false,
+                children: ["/other/git"],
+            },
         ],
     },
 };
