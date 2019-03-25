@@ -77,7 +77,7 @@ module.exports = {
             {
                 title: "其他",
                 collapsable: false,
-                children: ["/other/git"],
+                children: ["/other/git", "/other/linux"],
             },
         ],
     },
