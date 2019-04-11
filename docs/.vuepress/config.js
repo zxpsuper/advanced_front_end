@@ -67,6 +67,7 @@ module.exports = {
                     "/js/seajs",
                     "/js/design",
                     "/js/regular_expression",
+                    "/js/inherit",
                 ],
             },
             {
