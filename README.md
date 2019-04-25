@@ -41,6 +41,7 @@
 6. 一些插件
 
 * [一款轮播组件的诞生](./docs/plugin/carousal.md)
+* [如何写自己的 underscore](./docs/plugin/underscore.md)
 
 7. 其他
 * [GIT 操作总结](./docs/other/git.md)

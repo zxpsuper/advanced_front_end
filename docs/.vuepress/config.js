@@ -73,7 +73,7 @@ module.exports = {
             {
                 title: "一些插件",
                 collapsable: false,
-                children: ["/plugin/carousal"],
+                children: ["/plugin/carousal", "/plugin/underscore"],
             },
             {
                 title: "其他",
