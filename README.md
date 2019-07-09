@@ -38,12 +38,18 @@
 * [正则表达式](./docs/js/regular_expression.md)
 * [继承的几种实现方式](./docs/js/inherit.md)
 
-6. 一些插件
+6. Canvas
+
+* [Canvas 进阶（一）二维码的生成与扫码识别](./docs/canvas/canvas1.md)
+* [Canvas 进阶（二）写一个生成带logo的二维码npm插件](./docs/canvas/canvas2.md)
+* [Canvas 进阶（三）ts + canvas 重写”辨色“小游戏](./docs/canvas/canvas3.md)
+
+7. 一些插件
 
 * [一款轮播组件的诞生](./docs/plugin/carousal.md)
 * [如何写自己的 underscore](./docs/plugin/underscore.md)
 
-7. 其他
+8. 其他
 * [GIT 操作总结](./docs/other/git.md)
 * [前端必备 linux 命令](./docs/other/linux.md)
 

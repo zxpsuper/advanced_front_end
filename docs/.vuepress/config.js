@@ -1,5 +1,5 @@
 module.exports = {
-    base: "/Demo/advanced_front_end/",
+    base: "/advanced_front_end/docs/.vuepress/dist/",
     title: "前端进阶小书",
     description: "小皮咖前端经验整理而写成的一本书",
     markdown: {
@@ -68,6 +68,15 @@ module.exports = {
                     "/js/design",
                     "/js/regular_expression",
                     "/js/inherit",
+                ],
+            },
+            {
+                title: "Canvas",
+                collapsable: false,
+                children: [
+                    "/canvas/canvas1",
+                    "/canvas/canvas2",
+                    "/canvas/canvas3",
                 ],
             },
             {
