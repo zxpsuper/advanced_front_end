@@ -1,5 +1,5 @@
 module.exports = {
-    base: "/advanced_front_end/docs/.vuepress/dist/",
+    base: "/Demo/advanced_front_end/",
     title: "前端进阶小书",
     description: "小皮咖前端经验整理而写成的一本书",
     markdown: {
