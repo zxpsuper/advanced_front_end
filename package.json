@@ -1,6 +1,10 @@
 {
   "scripts": {
     "dev": "vuepress dev docs",
-    "build": "vuepress build docs"
+    "build": "vuepress build docs",
+    "push": "npm run build && node ./publish.js"
+  },
+  "dependencies": {
+    "gh-pages": "^2.1.1"
   }
 }

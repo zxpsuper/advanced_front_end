@@ -1,6 +1,6 @@
 # 前端进阶小书
 #### 本书为自己原创或一些优秀文章的文集，内容涵盖前端进阶知识，希望能帮助每个初级前端不断前行。
-#### 网址：[https://zxpsuper.github.io/Demo/advanced_front_end/](https://zxpsuper.github.io/Demo/advanced_front_end/)
+#### 网址：[https://zxpsuper.github.io/advanced_front_end/](https://zxpsuper.github.io/advanced_front_end/)
 
 #### 欢迎收藏或 star!
 1. CSS 大全
@@ -43,6 +43,7 @@
 * [Canvas 进阶（一）二维码的生成与扫码识别](./docs/canvas/canvas1.md)
 * [Canvas 进阶（二）写一个生成带logo的二维码npm插件](./docs/canvas/canvas2.md)
 * [Canvas 进阶（三）ts + canvas 重写”辨色“小游戏](./docs/canvas/canvas3.md)
+* [Canvas 进阶（四）实现一个“刮刮乐”游戏](./docs/canvas/canvas4.md)
 
 7. 一些插件
 

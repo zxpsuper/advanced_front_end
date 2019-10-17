@@ -1,7 +1,7 @@
 ---
 home: true
-heroImage: https://zxpsuper.github.io/img/avatar.jpg
-actionText: Let us go!!
+heroImage: https://avatars1.githubusercontent.com/u/28730619?s=460&v=4
+actionText: 开始阅读
 actionLink: /css/cssTips
 features:
 - title: 前端开发

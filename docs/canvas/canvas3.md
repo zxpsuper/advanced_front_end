@@ -1,4 +1,4 @@
-# Canvas 进阶（三）ts + canvas 重写”辨色“小游戏
+# ts + canvas 重写”辨色“小游戏
 
 # 1. 背景
 之前写过一篇文章 [ES6 手写一个“辨色”小游戏](https://juejin.im/post/5ba0da47e51d450e6a2e0548), 感觉好玩挺不错。岂料评论区大神频出，其中有人指出，打开控制台，输入以下代码：
@@ -16,7 +16,7 @@ setInterval( ()=>document.querySelector('#special-block').click(),1)
 # 2. 实现
 本项目基于 `typescript` 和 `canvas` 实现
 
-## (1) 首先定义配置项
+## （1） 首先定义配置项
 
 一个canvas标签，游戏总时长time, 开始函数start, 结束函数end
 
@@ -46,7 +46,7 @@ interface Coordinate {
 }
 ```
 
-## (2) 实现类 ColorGame
+## （2） 实现类 ColorGame
 定义好了需要用到的接口，再用类去实现它
 
 ```ts

@@ -1,5 +1,5 @@
 module.exports = {
-    base: "/Demo/advanced_front_end/",
+    base: "/advanced_front_end/",
     title: "前端进阶小书",
     description: "小皮咖前端经验整理而写成的一本书",
     markdown: {
@@ -77,6 +77,7 @@ module.exports = {
                     "/canvas/canvas1",
                     "/canvas/canvas2",
                     "/canvas/canvas3",
+                    "/canvas/canvas4",
                 ],
             },
             {
