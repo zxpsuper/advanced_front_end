@@ -13,83 +13,100 @@ module.exports = {
     themeConfig: {
         nav: [
             { text: "Home", link: "/" },
+            { text: "Typescript", link: "/typescript/1" },
             {
                 text: "Github",
                 link: "https://github.com/zxpsuper/advanced_front_end",
             },
         ],
-        sidebar: [
-            {
-                title: "CSS 大全",
-                collapsable: false,
-                children: ["/css/cssTips", "/css/flex", "/css/css3"],
-            },
-            {
-                title: "算法与数据结构",
-                collapsable: false,
-                children: [
-                    "/suanfa/binarySearch",
-                    "/suanfa/sort",
-                    "/suanfa/dataStructure",
-                ],
-            },
-            {
-                title: "浏览器相关",
-                collapsable: false,
-                children: [
-                    "/browser/https",
-                    "/browser/static",
-                    "/browser/cache",
-                    "/browser/cors",
-                    "/browser/eventloop",
-                    "/browser/urlrender",
-                    "/browser/garbage",
-                    "/browser/garbagerefuse",
-                ],
-            },
-            {
-                title: "Vue",
-                collapsable: false,
-                children: [
-                    "/vue/vue",
-                    "/vue/router",
-                    "/vue/vueplugin",
-                    "/vue/vuedate",
-                    "/vue/computedvswatch",
-                ],
-            },
-            {
-                title: "Javascript",
-                collapsable: false,
-                children: [
-                    "/js/use_strict",
-                    "/js/amd_commonjs",
-                    "/js/seajs",
-                    "/js/design",
-                    "/js/regular_expression",
-                    "/js/inherit",
-                ],
-            },
-            {
-                title: "Canvas",
-                collapsable: false,
-                children: [
-                    "/canvas/canvas1",
-                    "/canvas/canvas2",
-                    "/canvas/canvas3",
-                    "/canvas/canvas4",
-                ],
-            },
-            {
-                title: "一些插件",
-                collapsable: false,
-                children: ["/plugin/carousal", "/plugin/underscore"],
-            },
-            {
-                title: "其他",
-                collapsable: false,
-                children: ["/other/git", "/other/linux"],
-            },
-        ],
+        sidebar: {
+            "/book/": [
+                {
+                    title: "CSS 大全",
+                    collapsable: false,
+                    children: [
+                        "/book/css/cssTips",
+                        "/book/css/flex",
+                        "/book/css/css3",
+                    ],
+                },
+                {
+                    title: "算法与数据结构",
+                    collapsable: false,
+                    children: [
+                        "/book/suanfa/binarySearch",
+                        "/book/suanfa/sort",
+                        "/book/suanfa/dataStructure",
+                    ],
+                },
+                {
+                    title: "浏览器相关",
+                    collapsable: false,
+                    children: [
+                        "/book/browser/https",
+                        "/book/browser/static",
+                        "/book/browser/cache",
+                        "/book/browser/cors",
+                        "/book/browser/eventloop",
+                        "/book/browser/urlrender",
+                        "/book/browser/garbage",
+                        "/book/browser/garbagerefuse",
+                    ],
+                },
+                {
+                    title: "Vue",
+                    collapsable: false,
+                    children: [
+                        "/book/vue/vue",
+                        "/book/vue/router",
+                        "/book/vue/vueplugin",
+                        "/book/vue/vuedate",
+                        "/book/vue/computedvswatch",
+                    ],
+                },
+                {
+                    title: "Javascript",
+                    collapsable: false,
+                    children: [
+                        "/book/js/use_strict",
+                        "/book/js/amd_commonjs",
+                        "/book/js/seajs",
+                        "/book/js/design",
+                        "/book/js/regular_expression",
+                        "/book/js/inherit",
+                    ],
+                },
+                {
+                    title: "Canvas",
+                    collapsable: false,
+                    children: [
+                        "/book/canvas/canvas1",
+                        "/book/canvas/canvas2",
+                        "/book/canvas/canvas3",
+                        "/book/canvas/canvas4",
+                    ],
+                },
+                {
+                    title: "一些插件",
+                    collapsable: false,
+                    children: [
+                        "/book/plugin/carousal",
+                        "/book/plugin/underscore",
+                    ],
+                },
+                {
+                    title: "其他",
+                    collapsable: false,
+                    children: ["/book/other/git", "/book/other/linux"],
+                },
+            ],
+            "/typescript/": [
+                {
+                    title: "TypeScript入门01",
+                    collapsable: false,
+                    children: ["/typescript/1"],
+                },
+            ],
+        },
     },
 };
