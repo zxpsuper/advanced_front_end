@@ -1,7 +1,7 @@
 {
   "scripts": {
     "dev": "vuepress dev docs",
-    "build": "vuepress build docs",
+    "build": "node ./builds/addComponents.js && vuepress build docs && node ./builds/delComponents.js",
     "push": "npm run build && node ./publish.js"
   },
   "dependencies": {

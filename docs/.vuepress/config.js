@@ -51,6 +51,7 @@ module.exports = {
                         "/book/browser/urlrender",
                         "/book/browser/garbage",
                         "/book/browser/garbagerefuse",
+                        "/book/browser/safe",
                     ],
                 },
                 {
