@@ -13,6 +13,7 @@ module.exports = {
     themeConfig: {
         nav: [
             { text: "Home", link: "/" },
+            { text: "设计模式", link: "/design_patterns/前言" },
             { text: "Typescript", link: "/typescript/1" },
             {
                 text: "Github",
@@ -106,6 +107,21 @@ module.exports = {
                     title: "TypeScript入门01",
                     collapsable: false,
                     children: ["/typescript/1"],
+                },
+            ],
+            "/design_patterns/": [
+                {
+                    title: "前言",
+                    collapsable: false,
+                    children: [
+                        "/design_patterns/前言",
+                        "/design_patterns/工厂模式",
+                        "/design_patterns/单例模式",
+                        "/design_patterns/适配器模式",
+                        "/design_patterns/单例模式",
+                        "/design_patterns/单例模式",
+                        "/design_patterns/单例模式",
+                    ],
                 },
             ],
         },
