@@ -131,7 +131,7 @@ queue.print(); // 'Camila'
 
 **单向链表**
 
-![](https://user-gold-cdn.xitu.io/2017/6/26/e748673dbb5df2a93c3ee56b52a67849?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
+![](../images/dataStructure/1.jpg)
 
 ```js
 // 单向链表
@@ -198,7 +198,7 @@ console.log(fruits);
 
 双向链表和普通链表的区别在于，在链表中， 一个节点只有链向下一个节点的链接，而在双向链表中，链接是双向的:一个链向下一个元素， 另一个链向前一个元素，如下图所示:
 
-![](https://user-gold-cdn.xitu.io/2017/6/26/69932d224190c9815ce8ebc9eca51a0e?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
+![](../images/dataStructure/2.jpg)
 
 ```js
 // 链表节点
@@ -458,7 +458,7 @@ console.log(dictionary.items);
 
 二叉搜索树（BST）是二叉树的一种，但是它只允许你在左侧节点存储（比父节点）小的值， 在右侧节点存储（比父节点）大（或者等于）的值。上图中就展现了一棵二叉搜索树。
 
-![](https://user-gold-cdn.xitu.io/2017/6/26/404e889b3a1fd6cfd0b82d0f792e6aa4?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
+![](../images/dataStructure/3.jpg)
 
 ```js
 class Node {
@@ -516,7 +516,7 @@ class BinarySearchTree {
             if (node.key === key) return node;
             return searchNode(key < node.key ? node.left : node.right, key);
         };
-        return searchNode(root, key);
+        return searchNode(this.root, key);
     }
 
     remove(key) {
@@ -574,4 +574,4 @@ tree.insert(25);
 
 最终构建的树如下图：
 
-![](https://user-gold-cdn.xitu.io/2017/6/26/cce92b29864e998a24679ea823496738?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
+![](../images/dataStructure/4.jpg)

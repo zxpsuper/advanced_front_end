@@ -44,6 +44,7 @@ cache-control 除了该字段外，还有下面几个比较常用的设置值：
 **Cache-Control 与 Expires 可以在服务端配置同时启用，同时启用的时候 Cache-Control 优先级高**
 
 #### 协商缓存
+
 协商缓存就是由服务器来确定缓存资源是否可用，所以客户端与服务器端要通过某种标识来进行通信，从而让服务器判断请求资源是否可以缓存访问，这主要涉及到下面两组 header 字段，这两组搭档都是成对出现的，即第一次请求的响应头带上某个字段（ Last-Modified 或者 Etag ），则后续请求则会带上对应的请求字段（ If-Modified-Since 或者 If-None-Match ），若响应头没有 Last-Modified 或者 Etag 字段，则请求头也不会有对应的字段。
 
 
@@ -55,27 +56,28 @@ cache-control 除了该字段外，还有下面几个比较常用的设置值：
 
 当浏览器再次请求该资源时，request的请求头中会包含If-Modify-Since，该值为缓存之前返回的Last-Modify。服务器收到If-Modify-Since后，根据资源的最后修改时间判断是否命中缓存。
 
-如果命中缓存，则返回304，并且不会返回资源内容，并且不会返回Last-Modify。
+如果命中缓存，则返回 304，并且不会返回资源内容，并且不会返回 Last-Modify。
 
 **ETag/If-None-Match**
 
 与 Last-Modify/If-Modify-Since 不同的是，Etag/If-None-Match 返回的是一个校验码。ETag 可以保证每一个资源是唯一的，资源变化都会导致 ETag 变化。服务器根据浏览器上送的 If-None-Match 值来判断是否命中缓存。
 
-与 Last-Modified 不一样的是，当服务器返回304 Not Modified 的响应时，由于 ETag 重新生成过，response header 中还会把这个 ETag 返回，即使这个 ETag 跟之前的没有变化。
+与 Last-Modified 不一样的是，当服务器返回 304 Not Modified 的响应时，由于 ETag 重新生成过，response header 中还会把这个 ETag 返回，即使这个 ETag 跟之前的没有变化。
 
 
 **为什么要有Etag**
 
-你可能会觉得使用Last-Modified已经足以让浏览器知道本地的缓存副本是否足够新，为什么还需要Etag呢？HTTP1.1中Etag的出现主要是为了解决几个Last-Modified比较难解决的问题：
+你可能会觉得使用 Last-Modified 已经足以让浏览器知道本地的缓存副本是否足够新，为什么还需要 Etag 呢？HTTP1.1中 Etag 的出现主要是为了解决几个Last-Modified 比较难解决的问题：
 
-一些文件也许会周期性的更改，但是他的内容并不改变(仅仅改变的修改时间)，这个时候我们并不希望客户端认为这个文件被修改了，而重新GET；
+一些文件也许会周期性的更改，但是他的内容并不改变(仅仅改变的修改时间)，这个时候我们并不希望客户端认为这个文件被修改了，而重新 GET；
 
-某些文件修改非常频繁，比如在秒以下的时间内进行修改，(比方说1s内修改了N次)，If-Modified-Since能检查到的粒度是s级的，这种修改无法判断(或者说UNIX记录MTIME只能精确到秒)；
+某些文件修改非常频繁，比如在秒以下的时间内进行修改，(比方说 1s 内修改了 N 次)，If-Modified-Since 能检查到的粒度是s级的，这种修改无法判断(或者说UNIX记录MTIME只能精确到秒)；
 
 某些服务器不能精确的得到文件的最后修改时间。
-Last-Modified与ETag是可以一起使用的，服务器会优先验证ETag，一致的情况下，才会继续比对Last-Modified，最后才决定是否返回304。
+Last-Modified 与 ETag 是可以一起使用的，服务器会优先验证 ETag，一致的情况下，才会继续比对 Last-Modified，最后才决定是否返回 304。
 
 **强缓存与协商缓存的区别可以用下表来表示：**
+
 |缓存类型	|获取资源形式	|状态码	|发送请求到服务器|
 | :----: | :----:  | :----: | :----: |
 |强缓存|	从缓存取|	200（from cache）|	否，直接从缓存取|

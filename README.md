@@ -22,6 +22,7 @@
 * [输入URL至页面渲染](./docs/book/browser/urlrender.md)
 * [浏览器内存回收机制](./docs/book/browser/garbage.md)
 * [内存泄漏与避免](./docs/book/browser/garbagerefuse.md)
+* [前端网络安全](./docs/book/browser/safe.md)
 
 4. Vue
 * [Vue双向数据绑定原理](./docs/book/vue/vue.md)
