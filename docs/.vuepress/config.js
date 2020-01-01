@@ -111,16 +111,16 @@ module.exports = {
             ],
             "/design_patterns/": [
                 {
-                    title: "前言",
+                    title: "设计模式",
                     collapsable: false,
                     children: [
                         "/design_patterns/前言",
                         "/design_patterns/工厂模式",
                         "/design_patterns/单例模式",
                         "/design_patterns/适配器模式",
-                        "/design_patterns/单例模式",
-                        "/design_patterns/单例模式",
-                        "/design_patterns/单例模式",
+                        "/design_patterns/装饰者模式",
+                        "/design_patterns/观察者模式",
+                        "/design_patterns/发布订阅者模式",
                     ],
                 },
             ],

@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: https://avatars.githubusercontent.com/u/28730619?s=460&v=4
+heroImage: https://raw.githubusercontent.com/zxpsuper/Demo/master/images/avatar.jpg
 actionText: 开始阅读
 actionLink: /book/css/cssTips
 features:

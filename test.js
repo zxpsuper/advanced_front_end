@@ -1,31 +1,35 @@
-class Dog {
-    constructor() {
-        this.name = "Dog";
-    }
-    eat() {
-        console.log(this.name + " is eating");
-    }
-}
+// 发布订阅者模式
+var Event = function() {
+    this.obj = {};
+};
 
-class Cat {
-    constructor() {
-        this.name = "Cat";
+Event.prototype.on = function(eventType, fn) {
+    if (!this.obj[eventType]) {
+        this.obj[eventType] = [];
     }
-    eat() {
-        console.log(this.name + " is eating");
+    this.obj[eventType].push(fn);
+};
+
+Event.prototype.emit = function(...arguments) {
+    // arguments是类数组对象，不可直接使用数组方法，下面使arguments使用shift方法
+    var eventType = Array.prototype.shift.call(arguments);
+
+    var arr = this.obj[eventType];
+    for (let i = 0; i < arr.length; i++) {
+        // arguments上一步骤已经去除了第一个元素，剩下后面的元素,调用所对应的方法
+        arr[i].apply(arr[i], arguments);
     }
-}
+};
 
-function putOnWings(animal) {
-    animal.prototype.fly = function() {
-        console.log(this.name + " is flying");
-    };
-    return new animal();
-}
+var eventInstance = new Event();
+// 先订阅eat这个事件
 
-let dog = putOnWings(Dog);
+eventInstance.on("eat", function(name) {
+    console.log("Wash your hands before eating");
+});
+eventInstance.on("eat", function(name) {
+    console.log(name + " is eating.");
+});
 
-dog.fly();
-let cat = putOnWings(Cat);
-cat.fly();
-cat.eat();
+// 在必要的地方发布eat这个事件
+eventInstance.emit("eat", "xiaoming"); // Wash your hands before eating, xiaoming is eating.
