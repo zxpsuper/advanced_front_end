@@ -121,6 +121,8 @@ module.exports = {
                         "/design_patterns/装饰者模式",
                         "/design_patterns/观察者模式",
                         "/design_patterns/发布订阅者模式",
+                        "/design_patterns/策略模式",
+                        "/design_patterns/享元模式",
                     ],
                 },
             ],
