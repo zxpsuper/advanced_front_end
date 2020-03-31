@@ -13,7 +13,6 @@ module.exports = {
     themeConfig: {
         nav: [
             { text: "Home", link: "/" },
-            { text: "设计模式", link: "/design_patterns/前言" },
             { text: "Typescript", link: "/typescript/1" },
             {
                 text: "Github",
@@ -23,8 +22,8 @@ module.exports = {
         sidebar: {
             "/book/": [
                 {
-                    title: "CSS 大全",
-                    collapsable: false,
+                    title: "CSS 相关",
+                    collapsable: true,
                     children: [
                         "/book/css/cssTips",
                         "/book/css/flex",
@@ -32,8 +31,30 @@ module.exports = {
                     ],
                 },
                 {
-                    title: "算法与数据结构",
+                    title: "CSS 相关",
+                    collapsable: true,
+                    children: [
+                        "/book/css/cssTips",
+                        "/book/css/flex",
+                        "/book/css/css3",
+                    ],
+                },
+                {
+                    title: "设计模式",
                     collapsable: false,
+                    children: [
+                        "/design_patterns/前言",
+                        "/design_patterns/工厂模式",
+                        "/design_patterns/单例模式",
+                        "/design_patterns/适配器模式",
+                        "/design_patterns/装饰者模式",
+                        "/design_patterns/观察者模式",
+                        "/design_patterns/发布订阅者模式",
+                    ],
+                },
+                {
+                    title: "算法与数据结构",
+                    collapsable: true,
                     children: [
                         "/book/suanfa/binarySearch",
                         "/book/suanfa/sort",
@@ -42,7 +63,7 @@ module.exports = {
                 },
                 {
                     title: "浏览器相关",
-                    collapsable: false,
+                    collapsable: true,
                     children: [
                         "/book/browser/https",
                         "/book/browser/static",
@@ -57,7 +78,7 @@ module.exports = {
                 },
                 {
                     title: "Vue",
-                    collapsable: false,
+                    collapsable: true,
                     children: [
                         "/book/vue/vue",
                         "/book/vue/router",
@@ -68,7 +89,7 @@ module.exports = {
                 },
                 {
                     title: "Javascript",
-                    collapsable: false,
+                    collapsable: true,
                     children: [
                         "/book/js/use_strict",
                         "/book/js/amd_commonjs",
@@ -80,7 +101,7 @@ module.exports = {
                 },
                 {
                     title: "Canvas",
-                    collapsable: false,
+                    collapsable: true,
                     children: [
                         "/book/canvas/canvas1",
                         "/book/canvas/canvas2",
@@ -90,7 +111,7 @@ module.exports = {
                 },
                 {
                     title: "一些插件",
-                    collapsable: false,
+                    collapsable: true,
                     children: [
                         "/book/plugin/carousal",
                         "/book/plugin/underscore",
@@ -98,30 +119,8 @@ module.exports = {
                 },
                 {
                     title: "其他",
-                    collapsable: false,
+                    collapsable: true,
                     children: ["/book/other/git", "/book/other/linux"],
-                },
-            ],
-            "/typescript/": [
-                {
-                    title: "TypeScript入门01",
-                    collapsable: false,
-                    children: ["/typescript/1"],
-                },
-            ],
-            "/design_patterns/": [
-                {
-                    title: "设计模式",
-                    collapsable: false,
-                    children: [
-                        "/design_patterns/前言",
-                        "/design_patterns/工厂模式",
-                        "/design_patterns/单例模式",
-                        "/design_patterns/适配器模式",
-                        "/design_patterns/装饰者模式",
-                        "/design_patterns/观察者模式",
-                        "/design_patterns/发布订阅者模式",
-                    ],
                 },
             ],
         },
