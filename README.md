@@ -4,7 +4,7 @@
 
 #### 添加微信进前端资源共享群
 
-![](https://raw.githubusercontent.com/zxpsuper/Demo/master/images/suporka.jpg)
+<img src="https://raw.githubusercontent.com/zxpsuper/Demo/master/images/suporka.jpg" width=400>
 
 #### 欢迎收藏或 star!
 1. CSS 大全
