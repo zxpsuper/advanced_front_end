@@ -5,6 +5,7 @@
     "push": "npm run build && node ./publish.js"
   },
   "dependencies": {
-    "gh-pages": "^2.1.1"
+    "gh-pages": "^2.1.1",
+    "vuepress": "^1.4.1"
   }
 }

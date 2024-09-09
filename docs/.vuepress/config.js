@@ -1,7 +1,7 @@
 module.exports = {
     base: "/advanced_front_end/",
     title: "前端进阶小书",
-    description: "小皮咖前端经验整理而写成的一本书",
+    description: "扫码加好友拉你进前端资源共享群，海量视频共享一同成长",
     markdown: {
         lineNumbers: true,
         anchor: {
@@ -21,15 +21,6 @@ module.exports = {
         ],
         sidebar: {
             "/book/": [
-                {
-                    title: "CSS 相关",
-                    collapsable: true,
-                    children: [
-                        "/book/css/cssTips",
-                        "/book/css/flex",
-                        "/book/css/css3",
-                    ],
-                },
                 {
                     title: "CSS 相关",
                     collapsable: true,
